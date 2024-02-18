@@ -86,7 +86,7 @@ ul a:hover::before {
 
 /* Banner -- Start*/
 .banner {
-  background: linear-gradient(to right,#AD7EBC, #9BE7EB);
+  background: linear-gradient(to right,#AD7EBC, #9BE7EB, #EB94C4);
   width: 100%;
   height: 180px;
   display: flex;
@@ -139,93 +139,6 @@ ul a:hover::before {
   color: #9BE7EB;
 }
 /*Footer -- End*/
-
-/*Body -- Start*/
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 50px;
-}
-
-.div-main-informacion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0 20px;
-  width: 38%;
-  height:fit-content;
-  border-left: 4px solid #AD7EBC;
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #5B5B5B;
-  
-}
-.div-main-informacion h5 {
-  width: 100%;
-  align-content: baseline;
-  font-size: 18px;
-  padding: 10px 0 20px;
-}
-
-.div-main-informacion p{
-  font-size: 14px;
-}
-.main-first-p{
-  width: 25%;
-}
-
-.div-main-informacion p:last-child{
-  width: 75%;
-  text-align: end;
-}
-
-.div-main-sobremi {
-  width: 60%;
-  height:fit-content;
-  padding: 0 20px;
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #5B5B5B;
-  display: flex;
-  flex-direction: column;
-}
-.p-main-sobremi-welcome {
-  border-bottom: 2px solid #2F2A32;
-  padding: 52px 0 20px 0;
-}
-
-.p-main-sobremi-personal {
-  border-bottom: 2px solid #2F2A32;
-  padding-bottom: 10px;
-}
-
-.div-main-sobremi-intereses {
-  padding: 20px 0 52px 0;
-}
-
-.div-main-sobremi-intereses h5{
-  padding-bottom: 20px;
-}
-
-.grid-intereses {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-  justify-items: center;
-}
-.grid-intereses div {
-  background-color: #ffff;
-  text-align: center; /*Alinear la imagen con el texo en intereses*/
-  padding-top: 1rem;
-  border-radius: 10px;
-  width: 115px;
-  box-shadow: 0px 5px 10px #b1afaf;
-}
-
-.grid-intereses div:hover {
-  background:linear-gradient(to bottom,#AD7EBC, #9BE7EB);
-  opacity: 0.8;
-}
-/*Body -- End*/
 
 
 /******** Responsivo ********/
@@ -288,7 +201,7 @@ ul a:hover::before {
     left: 0;
   }
   /* Header and Nav -- End */
-  
+
   /* Footer -- Start*/
 .footer{
   height: 200px;
@@ -306,56 +219,6 @@ ul a:hover::before {
   padding-right: 0;
 }
 /*Footer -- End*/
-
-/*Body -- Start*/
-.main {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding: 20px;
-}
-
-.div-main-informacion {
-  padding: 0 10px;
-  width: 300px;
-  margin: 34px 0;
-  
-}
-.div-main-informacion h5 {
-  width: 100%;
-  align-content: baseline;
-  font-size: 18px;
-  padding: 10px 0 20px;
-}
-
-.div-main-informacion p{
-  font-size: 13px;
-}
-
-.div-main-sobremi {
-  width: 300px;
-}
-
-.div-main-sobremi-intereses h5{
-  text-align: center;
-}
-
-.grid-intereses {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  align-content:  center;
-}
-.grid-intereses div {
-  background-color: #ffff;
-  text-align: center; /*Alinear la imagen con el texo en intereses*/
-  padding-top: 1rem;
-  border-radius: 10px;
-  width: 115px;
-  box-shadow: 0px 5px 10px #b1afaf;
-}
-
-/*Body -- End*/
 
 }/*@media (max-width: 768px)*/
 
