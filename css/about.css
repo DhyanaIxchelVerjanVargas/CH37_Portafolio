@@ -1,0 +1,163 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aquamarine;
+	padding: 70px 0 0;
+
+}
+
+/* Header and Nav -- Start */
+.header {
+	background-color: #fff;
+	height: 70px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: left;
+  max-width: 992px;
+}
+
+.nav--link {
+	color: #2F2A32;
+	text-decoration: none;
+  position: relative; /* Para que a la hora de hacer la animación se le aplique solo a los links*/
+	
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 15px 0 62px;
+	line-height: 70px; /*Técnica para centrar el logo, poniendole el mismo alto del header que son 70px*/
+  border-right: 2px solid #2F2A32;
+  
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+}
+
+.nav-menu-item {
+	font-size: 18px;
+	margin: 0 15px;
+	line-height: 70px; /*Técnica para centrar el logo, poniendole el mismo alto del header que son 70px*/
+	width: max-content; /* En caso de tener 2 palabras en los links NO los cortará a la hora de hacer más pequeña la pantalla*/
+}
+
+/*Animación de nav--link*/
+ul a::before {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2F2A32;
+  transition: 0.3s;
+}
+
+ul a:hover::before {
+    width: 100%;
+}
+
+.nav-toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px; 
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+/* Header and Nav -- End */
+
+/* Banner -- Start*/
+.banner {
+  background: linear-gradient(to right,#AD7EBC, #9BE7EB);
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+}
+.banner h1 {
+  font-weight: bold;
+  font-size: 42px;
+}
+/* Banner -- End*/
+
+
+
+
+/******** Responsivo ********/
+@media (max-width: 768px) {
+  body {
+    padding-top: 55px;
+  }
+  
+  /* Header and Nav -- Start */
+  .header {
+    height: 55px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-menu-link {
+    color: #fff;    
+  }
+  
+  .logo {
+    font-size: 18px;
+    padding: 0 10px 0 50px;
+    line-height: 55px; /*Técnica para centrar el logo, poniendole el mismo alto del header que son 55px*/
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #2F2A32;
+    position: fixed;
+    left: 0;
+    top: 55px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 55px); /* Esta linea junto con el overflow me van a ayudar a poner una barra de navegación en caso de que se haga muy pequeño mi nav*/
+    overflow-y: auto;
+    left: 100%; /* El menú se corre 100% hacia la derecha*/
+    transition: left 0.3s;
+  }
+  
+  .nav-menu-item {
+    font-size: 15px;
+    line-height: 55px; /*Técnica para centrar el logo, poniendole el mismo alto del header que son 70px*/
+  }
+  
+  /*Animación de nav--link - Start*/
+  ul a::before {
+    background-color: #ffff;
+  }
+  /*Animación de nav--link - End*/
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+}
+
