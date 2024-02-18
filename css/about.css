@@ -7,7 +7,9 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: aquamarine;
 	padding: 70px 0 0;
-
+  display: flex; /* Desde aquí hasta min-height: 100vh es para que el footer se vaya hasta abajo y no sé mueva. En el footer también se le colocó la propiedad margin-top:auto*/
+  flex-direction: column;
+  min-height: 100vh;/* Aquí termina la solución para hacer que el footer se vaya hasta abajo*/
 }
 
 /* Header and Nav -- Start */
@@ -97,6 +99,46 @@ ul a:hover::before {
 }
 /* Banner -- End*/
 
+/* Footer -- Start*/
+.footer{
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  margin-top: auto;
+}
+
+.footer strong {
+ color: #AD7EBC;
+ font-size: 14px;
+ padding-left: 50px;
+}
+
+.footer-icons i {
+  font-size: 30px;
+  color: #AD7EBC;
+  cursor: pointer;
+  padding: 0 7px;
+}
+
+.footer-arrowup i {
+  color:#AD7EBC;
+  font-size: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.footer i:hover {
+  color:#EB94C4;
+}
+
+.footer i:active {
+  color: #9BE7EB;
+}
+/*Footer -- End*/ 
+
 
 
 
@@ -159,5 +201,25 @@ ul a:hover::before {
   .nav-menu_visible {
     left: 0;
   }
+
+  /* Footer -- Start*/
+.footer{
+  height: 200px;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+
 }
+
+.footer strong {
+ padding-left: 0;
+}
+
+.footer-arrowup i {
+  padding-right: 0;
+}
+/*Footer -- End*/
+
+
+}/*@media (max-width: 768px)*/
 
