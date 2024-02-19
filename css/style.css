@@ -1,5 +1,98 @@
 * {
 	margin:0;
 	box-sizing: border-box;
+
 }
+
+/*Sección Inicio -- Start*/
+.inicio {
+  background: linear-gradient(to right, rgba(240, 243, 244, 0.8), rgb(171, 171, 172,0.2)),
+  url(../src/img/fondoIndex.png);
+  background-size: cover;
+  height: 100vh;
+  color: #13131383;
+  display: flex;
+  align-items: center;
+  
+}
+
+.inicio .contenido-banner {
+  padding: 20px;
+  /*background-color: #ffff;
+  max-width: 350px;*/
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.contenedor-img {
+  background: url(../src/img/circulosFondo.png);
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.inicio .contenido-banner img {
+  margin-top: 40px;
+  border: 10px solid #40404034;
+  display: block;
+  /*width: 80%;*/
+  margin: auto;
+  border-radius: 100%;
+}
+
+.contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid #13131383;
+  padding: 10px 10px;
+  border-radius: 30px;
+  max-width: 250px;
+  margin-left: 30px;
+}
+
+.contenedor-boton .btn {
+  background-color: #AD7EBC;
+  border: none;
+  border-radius: 30px;
+  width: 70%;
+}
+.contenedor-boton .btn:hover {
+  background-color: #9BE7EB;
+}
+
+.contenedor-boton  a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor-boton h5 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.contenido-banner h2 {
+  font-weight: bold;
+}
+
+.contenido-banner h4 {
+  font-size: 18px;
+}
+
+.contenedor-redes i {
+  font-size: 40px;
+  color: #13131383;
+  padding: 0 10px;
+}
+
+.contenedor-redes i:hover {
+  color: #9BE7EB;
+}
+
+.contenedor-redes {
+  margin-top: 10px;
+}
+
+/*Sección Inicio -- End*/
+
 
