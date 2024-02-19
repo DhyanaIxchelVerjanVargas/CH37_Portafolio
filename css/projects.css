@@ -140,6 +140,15 @@ ul a:hover::before {
 }
 /*Footer -- End*/
 
+/*Proyectos -- Start*/
+.proyectos-sec {
+  padding: 40px 40px 80px 40px;
+}
+
+
+
+/*Proyectos -- End*/
+
 
 /******** Responsivo ********/
 @media (max-width: 768px) {
@@ -180,6 +189,7 @@ ul a:hover::before {
     overflow-y: auto;
     left: 100%; /* El menú se corre 100% hacia la derecha*/
     transition: left 0.3s;
+    z-index: 100;
   }
   
   .nav-menu-item {
