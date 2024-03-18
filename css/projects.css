@@ -16,7 +16,7 @@ body {
 .header {
 	background-color: #fff;
 	height: 70px;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -146,14 +146,14 @@ ul a:hover::before {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  z-index: 1;
+
 }
 
 .card {
-  z-index: 1;
   text-align: center;
   border-radius: 0;
   box-shadow: 1px 1px 10px #5B5B5B;
+  position: static; /*Corregir que las cards se sobrepusieran*/
 }
 
 .btn {
